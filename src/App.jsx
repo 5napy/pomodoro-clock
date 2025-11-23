@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css'
+import beepSound from "./assets/alarm.mp3";
+
 
 function App() {
   const [sessionLength, setSessionLength] = useState(25);
@@ -157,7 +159,7 @@ const materialIcons = "material-symbols-outlined";
   ref={audioRef}
 
   preload="auto"
-  src="src/assets/alarm.mp3"
+  src={beepSound}
 ></audio>
 
     </div>
